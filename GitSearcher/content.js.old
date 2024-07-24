@@ -48,9 +48,8 @@
 
   const checkUrl = async (url) => {
     try {
-      const response = await fetch(url, { mode: 'no-cors' });
-      let resText = await response.text();
-	if (resText.includes('refs/heads') && resText.length < 90) {
+      const response = await fetch(url);
+      if (response.ok) {
         return url;
       }
     } catch (error) {
