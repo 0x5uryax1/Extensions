@@ -6,7 +6,6 @@
 </head>
 <body>
   <h1>Git Head Searcher</h1>
-  <button id="toggleButton">Turn Off</button>
   <div id="results"></div>
   <script src="popup.js"></script>
 </body>
