@@ -1,4 +1,7 @@
 (async () => {
+	const extensionActive = await chrome.storage.local.get('extensionActive');
+	console.log(extensionActive.extensionActive);
+	if(extensionActive.extensionActive){
   const baseUrl = new URL(window.location.href);
   const paths = new Set();
 
@@ -76,11 +79,15 @@
       }
     }
   });
-
+		try{
   await Promise.all(fetchPromises);
+		}catch (error){
+			console.log(error);
+		}
 
   if (foundPaths.length > 0) {
     chrome.runtime.sendMessage({ action: "storeResult", data: foundPaths });
   }
+	}
 })();
 
