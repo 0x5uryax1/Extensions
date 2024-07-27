@@ -38,5 +38,6 @@ This Chrome extension automatically searches for `.git/HEAD` files in all possib
 - UI Done by Mohit Singh.
 
 
-Hope this helps in your hacking journey!.\n
+Hope this helps in your hacking journey!.
+
 Love, from Surya.
