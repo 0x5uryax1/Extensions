@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (data.gitHeadResults && data.gitHeadResults[tabId]) {
         const foundPaths = data.gitHeadResults[tabId];
+        // console.log("under if");
         if (foundPaths.length > 0) {
           resultsDiv.innerHTML = "<h2>Found .git/HEAD at:</h2>";
           foundPaths.forEach(path => {
@@ -39,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             resultsDiv.appendChild(pathElement);
           });
         } else {
-          resultsDiv.innerHTML = "<h2>Not found</h2>";
+          console.log("Nothing Found!")
+          resultsDiv.innerHTML = "<h2>Nothing found yet!</h2>";
         }
       }
     });
