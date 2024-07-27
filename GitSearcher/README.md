@@ -1,4 +1,4 @@
-# Git Searcher Chrome Extension
+# Git Searcher Browser Extension
 
 This Chrome extension automatically searches for `.git/HEAD` files in all possible directory endpoints found within the source code of any visited website. If a `.git/HEAD` file is found, it displays the result in the extension popup.
 
