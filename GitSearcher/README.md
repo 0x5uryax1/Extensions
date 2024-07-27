@@ -33,7 +33,7 @@ This Chrome extension automatically searches for `.git/HEAD` files in all possib
 - `popup.js`: The JavaScript file for the extension popup.
 - `styles.css`: The CSS file for styling the extension popup.
 
-#### Special Thanks
+### Special Thanks
 Mohit Singth ( Helped me with UI Design ).
 
 
