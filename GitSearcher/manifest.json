@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Git Head Searcher",
+  "name": "Git Searcher",
   "version": "1.0",
   "description": "Search for /.git/HEAD in all possible paths on the website.",
   "permissions": [
